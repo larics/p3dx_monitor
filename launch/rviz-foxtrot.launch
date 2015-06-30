@@ -1,0 +1,9 @@
+<launch>
+  <!-- Launches RViz with appropriate config + robot URDF description
+  -->
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find p3dx_monitor)/rviz/foxtrot.rviz"/>
+
+  <include file="$(find p2os_urdf)/launch/pioneer3dx_urdf.launch"/>
+
+</launch>
