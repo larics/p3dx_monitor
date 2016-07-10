@@ -53,13 +53,13 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        foxtrot/base_link:
+        pioneer/base_link:
           Value: true
-        foxtrot/laser:
+        pioneer/laser:
           Value: true
-        foxtrot/map:
+        pioneer/map:
           Value: true
-        foxtrot/odom:
+        pioneer/odom:
           Value: true
       Marker Scale: 2.5
       Name: TF
@@ -67,10 +67,10 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        foxtrot/map:
-          foxtrot/odom:
-            foxtrot/base_link:
-              foxtrot/laser:
+        pioneer/map:
+          pioneer/odom:
+            pioneer/base_link:
+              pioneer/laser:
                 {}
       Update Interval: 0
       Value: true
@@ -99,7 +99,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.05
       Style: Flat Squares
-      Topic: /foxtrot/scan
+      Topic: /pioneer/scan
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -110,7 +110,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /foxtrot/map
+      Topic: /pioneer/map
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -125,7 +125,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
-      Topic: /foxtrot/move_base/TrajectoryPlannerROS/global_plan
+      Topic: /pioneer/move_base/TrajectoryPlannerROS/global_plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -133,7 +133,7 @@ Visualization Manager:
       Color: 25; 255; 0
       Enabled: true
       Name: Robot Footprint
-      Topic: /foxtrot/move_base/local_costmap/footprint
+      Topic: /pioneer/move_base/local_costmap/footprint
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -148,7 +148,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
-      Topic: /foxtrot/move_base/TrajectoryPlannerROS/local_plan
+      Topic: /pioneer/move_base/TrajectoryPlannerROS/local_plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -163,7 +163,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
-      Topic: /foxtrot/move_base/NavfnROS/plan
+      Topic: /pioneer/move_base/NavfnROS/plan
       Unreliable: false
       Value: true
     - Alpha: 1
@@ -178,7 +178,7 @@ Visualization Manager:
       Shaft Length: 1
       Shaft Radius: 0.05
       Shape: Arrow
-      Topic: /foxtrot/move_base/current_goal
+      Topic: /pioneer/move_base/current_goal
       Unreliable: false
       Value: true
     - Arrow Length: 0.05
@@ -186,13 +186,13 @@ Visualization Manager:
       Color: 255; 25; 0
       Enabled: true
       Name: Particle
-      Topic: /foxtrot/particlecloud
+      Topic: /pioneer/particlecloud
       Unreliable: true
       Value: true
   Enabled: true
   Global Options:
     Background Color: 0; 0; 0
-    Fixed Frame: foxtrot/map
+    Fixed Frame: pioneer/map
     Frame Rate: 30
   Name: root
   Tools:
@@ -203,9 +203,9 @@ Visualization Manager:
     - Class: rviz/FocusCamera
     - Class: rviz/Measure
     - Class: rviz/SetInitialPose
-      Topic: /foxtrot/initialpose
+      Topic: /pioneer/initialpose
     - Class: rviz/SetGoal
-      Topic: /foxtrot/move_base_simple/goal
+      Topic: /pioneer/move_base_simple/goal
     - Class: rviz/PublishPoint
       Single click: true
       Topic: /clicked_point
